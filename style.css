@@ -1,0 +1,155 @@
+*
+*::after,
+*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Universal Selector |^*/
+
+body{
+    font-family: 'Biryani',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #777;
+    padding: 25px;
+}
+
+.header{
+    height:95vh;
+    background-image: linear-gradient(
+        to right ,
+        rgba(220, 227, 91, 0.856),rgba(69, 182, 73, 0.884)),
+         url(./img/cover.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75%,0 100%);
+}
+
+.header__logo{
+    position: absolute;
+    top:30px;
+    left: 40px;
+}
+.header__logo img{
+    height: 80px;
+}
+
+.header__centering{
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    
+    /*To prevent the sake in animation-->*/
+    backface-visibility: hidden; 
+}
+.title-main{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 28px;
+    animation-name: moveLeft;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+}
+.title-sub{
+    display: block;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    animation-name: moveRight;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    margin-bottom: 70px;
+}
+
+/*Animation*/
+
+@keyframes moveLeft{
+    0%{
+        opacity: 0;
+        transform:translateX(100px);
+    }
+    80%{
+        opacity: 0.6;
+        transform: translateX(-10px)
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveRight{
+    0%{
+        opacity: 0;
+        transform:translateX(-100px);
+    }
+    80%{
+        opacity: 0.9;
+        transform: translateX(10px)
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/*Button*/
+.header__btns{
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center
+}
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 60px;
+    display: block;
+    border-radius: 100px;
+    transition: all .4s;
+}
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.281);
+}
+.btn:active{
+    transform:translateY(-1px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.281);
+} 
+
+.btn_1 { 
+    background-color: #dddddd;
+    color: #777;
+}
+
+.btn2 { 
+    margin: 20px 5px;
+    background-color: #dddddd;
+    color: #777;
+}
+.btn2:hover{
+    transform:translateY(-3px);
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.24);
+}
+.btn2:active{
+    transform:translateY(-1px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.281);
+} 
+.btn2::after{
+    height:100%;
+    width:100%;
+}

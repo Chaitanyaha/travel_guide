@@ -1,0 +1,179 @@
+.section {
+  background-color: #f7f7f7;
+  padding: 20rem 0;
+  margin-top: -20%;
+}
+
+.section-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heading {
+  background-image: -webkit-gradient(linear, left top, right top, from(#52c234), to(#1c6801));
+  background-image: linear-gradient(to right, #52c234, #1c6801);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: -1rem;
+  letter-spacing: 1px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.heading:hover {
+  -webkit-transform: skewY(4deg) skewX(10deg) scale(1.1);
+          transform: skewY(4deg) skewX(10deg) scale(1.1);
+  text-shadow: 0.5rem 0.6rem 1.5rem rgba(0, 0, 0, 0.267);
+}
+
+.section-about__info {
+  margin: 3.5rem 14rem;
+  width: 80%;
+}
+
+.section-about__info .descripton {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding-right: 10rem;
+}
+
+.section-about__info .descripton p {
+  margin-bottom: 2rem;
+  font-size: 0.7rem;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section-about__info .descripton .btn,
+.section-about__info .descripton .btn:link,
+.section-about__info .descripton .btn:visited {
+  border: none;
+  background: transparent;
+  color: #37ff00;
+  font-weight: 800;
+  margin-top: 2rem;
+  outline: none;
+  padding: .8rem;
+}
+
+.section-about__info .descripton .btn:hover,
+.section-about__info .descripton .btn:link:hover,
+.section-about__info .descripton .btn:visited:hover {
+  background: #00b309;
+}
+
+.section-about__info .descripton .gallery {
+  margin: 4rem -7rem;
+}
+
+.section-about__info .descripton .gallery .gallery-art {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-about__info .descripton .gallery .pic {
+  width: 30%;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.479);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.479);
+  border-radius: 2px;
+  border: 1.2px solid black;
+  margin-left: 2rem;
+  outline-offset: 0.6rem;
+}
+
+.section-about__info .descripton .gallery .pic:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 70;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.068);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.068);
+  outline: 0.8rem solid #009b08;
+}
+
+.section-about__info .descripton .gallery .gallery__p1 {
+  position: absolute;
+  left: 17%;
+  z-index: 5;
+}
+
+.section-about__info .descripton .gallery .gallery__p2 {
+  position: absolute;
+  left: 38%;
+  z-index: 10;
+}
+
+.section-about__info .descripton .gallery .gallery__p3 {
+  position: absolute;
+  left: -3%;
+}
+
+.section-about__info .descripton .gallery .gallery__p4 {
+  position: absolute;
+  left: 58%;
+  z-index: 35;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer__logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4rem;
+}
+
+.footer .navigation {
+  padding: 1rem;
+}
+
+.footer .navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  margin-top: 80px;
+}
+
+.footer .navigation__list .item {
+  padding: 10px;
+}
+
+.footer .navigation__list .link {
+  text-decoration: none;
+  color: #23a100;
+}
+/*# sourceMappingURL=main.css.map */
